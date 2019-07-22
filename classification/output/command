@@ -1,0 +1,6 @@
+CUDA_VISIBLE_DEVICES=5,6,7 python detect_from_video.py -i predict.mp4 -o output -mi /home/js8365/FaceForensics/classification/models/face_detection/xception/all_c23.p --cuda 
+
+CUDA_VISIBLE_DEVICES=5,6,7 python detect_from_video.py -i predict2.mp4 -o output -mi /home/js8365/FaceForensics/classification/models/face_detection/xception/all_c23.p --cuda 
+
+
+

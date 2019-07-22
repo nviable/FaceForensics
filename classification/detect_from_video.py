@@ -7,8 +7,6 @@ python detect_from_video.py
     -i <folder with video files or path to video file>
     -m <path to model file>
     -o <path to output folder, will write one or multiple output videos there>
-
-Author: Andreas Rössler
 """
 import os
 import argparse
@@ -206,8 +204,8 @@ def test_full_image_network(video_path, model_path, output_path,
             break
 
         # Show
-        cv2.imshow('test', image)
-        cv2.waitKey(33)     # About 30 fps
+        # cv2.imwrite('output/{}-{}.jpg'.format(video_fn[:-4], str(frame_num)), image)
+        # cv2.waitKey(33)     # About 30 fps
         writer.write(image)
     pbar.close()
     if writer is not None:

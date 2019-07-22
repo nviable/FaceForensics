@@ -1,0 +1,6 @@
+models
+dataset/__pycache__
+predict*.avi
+predict*.mp4
+xception-b56*.pth
+network/__pycache__
